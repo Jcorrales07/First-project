@@ -1,0 +1,56 @@
+
+@use '../indexsass'as i;
+
+.main {
+    .acerca-de {
+        .contenedor {
+            overflow: visible;
+            .foto {
+                display: flex;
+                justify-content: center;
+                img {
+                    border: 5px solid i.$coloreBlanco08;
+                    border-radius: 50%;
+                    display: inline-block;
+                    margin-top: -60px;
+                }
+            }
+            .contenedor-texto {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                .texto {
+                    margin: 15px 0 50px 0;
+                    .titulo {
+                        font-size: i.$fontSize;
+                        color: i.$colorNaranja;
+                        margin: 25px 0;
+                        font-weight: 400;
+                    }
+                    p {
+                        width: 80%;
+                        margin: auto;
+                        text-align: center;
+                        font-size: 1.110rem;
+                        color: #494848;
+                        line-height: 25px;
+                        .nombre {
+                            text-decoration: underline;
+                            font-weight: 600;
+                            &:hover {
+                                color: #ff712f;
+                                text-decoration: none;
+                                text-shadow: 2px 2px 4px;
+                            }
+                        }
+                        .escuela {
+                            color: i.$colorAzul;
+                            text-shadow: 2px 2px 4px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }  
+    }
+}

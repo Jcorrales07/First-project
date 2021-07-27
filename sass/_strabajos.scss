@@ -1,0 +1,50 @@
+@use '../indexsass' as i;
+
+
+.trabajos {
+    background: #cecece;
+    .titulo {
+        font-size: i.$fontSize;
+        color: #505050;
+        text-align: center;
+        margin: 50px 0;
+        text-shadow: 2px 2px 5px;
+    }
+    .contenedor-trabajos {
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .thumb {
+        margin-bottom: 20px;
+        text-align: center;
+        img {
+            border-radius: 7px;
+            border: 3px solid transparent;
+            opacity: .8;
+            &:hover {
+                // border: 3px solid #3d3d3d;
+                // border-radius: 7px;
+                box-shadow: 5px 5px 8px 3px #3f3f3f;
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+        .description {
+            margin: 20px 0;
+            .nombre {
+                margin-bottom: 5px;
+                color: i.$colorNaranja;
+                font-weight: 600;
+            }
+            .categoria {
+                color: i.$colorAzul;
+                font-weight: 600;
+                font-size: .875rem;
+            }
+        }
+    }
+}

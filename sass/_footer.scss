@@ -1,0 +1,90 @@
+@use '../indexsass' as i;
+
+footer {
+    // background: #000;
+    .contacto {
+        width: 70%;
+        margin: auto;
+        text-align: center;
+        .titulo {
+            margin: 50px 0;
+            font-size: i.$fontSize;
+            color: #222222;
+            text-shadow: 0px 0px 2px 4px rgb(43, 43, 43);
+        }
+        .formulario {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: center;
+            margin-bottom: 50px;
+            input[type="text"],
+            input[type="email"],
+            textarea {
+                font-size: 1rem;
+                padding: 15px 20px;
+                border: 3px solid #000;
+                border-radius: 5px;
+            }
+            input[type="text"],
+            input[type="email"] {
+                width: 49%;
+                margin-bottom: 15px;
+            }
+            textarea {
+                width: 100%;
+                min-width: 100%;
+                min-height: 100px;
+                max-height: 250px;
+            }
+            input[type="submit"] {
+                margin: auto;
+                margin-top: 15px;
+                text-align: center;
+                padding: 10px 25px;
+                background: i.$colorAzul;
+                border: 3px solid i.$colorAzul;
+                border-radius: 5px;
+                color: #fff;
+                font-weight: 600;
+                cursor: pointer;
+                &:hover {
+                    border: 3px solid #113872;
+                    color: #113872;
+                    background: #cecece;
+                }
+            }
+        }
+    }
+}
+  
+.redes-sociales {
+    background: rgb(31, 50, 90);
+    .contenedor {
+        .redes {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            margin: 40px auto;
+            width: 100%;
+            a {
+                padding: 20px 35px;
+                color: #fff;
+                font-size: 2rem;
+                border-radius: 5px;
+                &.insta:hover {
+                    background: #5851db;
+                }
+                &.face:hover {
+                    background: #3b5998;
+                }
+                &.wha:hover {
+                    background: #075e54;
+                }
+                &.youtube:hover {
+                    background: #ff0000;
+                }
+            }
+        }
+    }
+}

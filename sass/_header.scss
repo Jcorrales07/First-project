@@ -1,0 +1,46 @@
+
+@use '../indexsass' as i;
+
+header {
+    background: url("../img/Fondo.jpg") ;
+    background-color: i.$colorHeader ;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+    max-height: 600px;
+    .menu {
+        margin: 40px 0;
+        float: right;
+        a {
+            padding: 15px 5px;
+            color: i.$colorBlanco;
+            text-decoration: none;
+            font-weight: 700;
+            &:hover {
+                color: i.$colorNegro;
+            }
+        }
+    }
+    .contenedor-texto {
+        margin: 190px auto;
+        border: 3px solid i.$coloreBlanco08;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+        padding: 40px 80px;
+        text-align: center;
+        width: 40%;
+        .texto {
+            color: i.$colorBlanco09;
+            display: inline-block;
+            .autor {
+                font-size: i.$fontSize;
+            }
+            .profesion {
+                font-size: 1.5rem;
+                font-weight: 400;
+            }
+        }
+    }
+}

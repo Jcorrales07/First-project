@@ -1,0 +1,378 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comfortaa";
+  font-size: 1rem;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background: url("../img/Fondo.jpg");
+  background-color: #fa942ec5;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 550px;
+  max-height: 600px;
+}
+header .menu {
+  margin: 40px 0;
+  float: right;
+}
+header .menu a {
+  padding: 15px 5px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+}
+header .menu a:hover {
+  color: #000;
+}
+header .contenedor-texto {
+  margin: 190px auto;
+  border: 3px solid rgba(255, 255, 255, 0.856);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  padding: 40px 80px;
+  text-align: center;
+  width: 40%;
+}
+header .contenedor-texto .texto {
+  color: rgba(255, 255, 255, 0.925);
+  display: inline-block;
+}
+header .contenedor-texto .texto .autor {
+  font-size: 1.8rem;
+}
+header .contenedor-texto .texto .profesion {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.main .acerca-de .contenedor {
+  overflow: visible;
+}
+.main .acerca-de .contenedor .foto {
+  display: flex;
+  justify-content: center;
+}
+.main .acerca-de .contenedor .foto img {
+  border: 5px solid rgba(255, 255, 255, 0.856);
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: -60px;
+}
+.main .acerca-de .contenedor .contenedor-texto {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.main .acerca-de .contenedor .contenedor-texto .texto {
+  margin: 15px 0 50px 0;
+}
+.main .acerca-de .contenedor .contenedor-texto .texto .titulo {
+  font-size: 1.8rem;
+  color: #a35200;
+  margin: 25px 0;
+  font-weight: 400;
+}
+.main .acerca-de .contenedor .contenedor-texto .texto p {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-size: 1.11rem;
+  color: #494848;
+  line-height: 25px;
+}
+.main .acerca-de .contenedor .contenedor-texto .texto p .nombre {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.main .acerca-de .contenedor .contenedor-texto .texto p .nombre:hover {
+  color: #ff712f;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px;
+}
+.main .acerca-de .contenedor .contenedor-texto .texto p .escuela {
+  color: #396dbb;
+  text-shadow: 2px 2px 4px;
+  font-weight: 600;
+}
+
+.trabajos {
+  background: #cecece;
+}
+.trabajos .titulo {
+  font-size: 1.8rem;
+  color: #505050;
+  text-align: center;
+  margin: 50px 0;
+  text-shadow: 2px 2px 5px;
+}
+.trabajos .contenedor-trabajos {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.trabajos .thumb {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.trabajos .thumb img {
+  border-radius: 7px;
+  border: 3px solid transparent;
+  opacity: 0.8;
+}
+.trabajos .thumb img:hover {
+  box-shadow: 5px 5px 8px 3px #3f3f3f;
+  opacity: 1;
+  cursor: pointer;
+}
+.trabajos .thumb .description {
+  margin: 20px 0;
+}
+.trabajos .thumb .description .nombre {
+  margin-bottom: 5px;
+  color: #a35200;
+  font-weight: 600;
+}
+.trabajos .thumb .description .categoria {
+  color: #396dbb;
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+footer .contacto {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+footer .contacto .titulo {
+  margin: 50px 0;
+  font-size: 1.8rem;
+  color: #222222;
+  text-shadow: 0px 0px 2px 4px #2b2b2b;
+}
+footer .contacto .formulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-bottom: 50px;
+}
+footer .contacto .formulario input[type=text],
+footer .contacto .formulario input[type=email],
+footer .contacto .formulario textarea {
+  font-size: 1rem;
+  padding: 15px 20px;
+  border: 3px solid #000;
+  border-radius: 5px;
+}
+footer .contacto .formulario input[type=text],
+footer .contacto .formulario input[type=email] {
+  width: 49%;
+  margin-bottom: 15px;
+}
+footer .contacto .formulario textarea {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100px;
+  max-height: 250px;
+}
+footer .contacto .formulario input[type=submit] {
+  margin: auto;
+  margin-top: 15px;
+  text-align: center;
+  padding: 10px 25px;
+  background: #396dbb;
+  border: 3px solid #396dbb;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+footer .contacto .formulario input[type=submit]:hover {
+  border: 3px solid #113872;
+  color: #113872;
+  background: #cecece;
+}
+
+.redes-sociales {
+  background: #1f325a;
+}
+.redes-sociales .contenedor .redes {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 40px auto;
+  width: 100%;
+}
+.redes-sociales .contenedor .redes a {
+  padding: 20px 35px;
+  color: #fff;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+.redes-sociales .contenedor .redes a.insta:hover {
+  background: #5851db;
+}
+.redes-sociales .contenedor .redes a.face:hover {
+  background: #3b5998;
+}
+.redes-sociales .contenedor .redes a.wha:hover {
+  background: #075e54;
+}
+.redes-sociales .contenedor .redes a.youtube:hover {
+  background: #ff0000;
+}
+
+@media screen and (max-width: 1090px) {
+  .trabajos .thumb img {
+    width: 250px;
+    border-radius: 15px;
+  }
+}
+@media screen and (max-width: 833px) {
+  header {
+    height: 450px;
+  }
+  header .menu {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .trabajos .thumb img {
+    width: 140px;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 770px) {
+  header .contenedor-texto {
+    border: 2px solid rgba(255, 255, 255, 0.856);
+    padding: 25px 40px;
+    width: 50%;
+    margin: 190px auto;
+  }
+  header .contenedor-texto .texto .autor {
+    font-size: 1.5rem;
+  }
+  header .contenedor-texto .texto .profesion {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  header .contenedor-texto {
+    border: 2px solid rgba(255, 255, 255, 0.856);
+    padding: 25px 40px;
+    width: 50%;
+    margin: 190px auto 100px auto;
+  }
+  header .contenedor-texto .texto .autor {
+    font-size: 1.9rem;
+  }
+  header .contenedor-texto .texto .profesion {
+    font-size: 1rem;
+  }
+
+  .trabajos .thumb img {
+    width: 127px;
+    border-radius: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  footer .contenedor .formulario input[type=text],
+footer .contenedor .formulario input[type=email] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  footer .contenedor .formulario input[type=text],
+footer .contenedor .formulario input[type=email],
+footer .contenedor .formulario textarea {
+    padding: 10px 15px;
+    font-size: 0.875rem;
+  }
+  footer .contenedor .formulario input[type=submit] {
+    padding: 10px 15px;
+    font-size: 0.875rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  .contenedor {
+    width: 100%;
+  }
+
+  header {
+    height: 450px;
+  }
+  header .menu {
+    text-align: center;
+    margin: 40px 5px;
+    background-color: #ff800052;
+    padding: 10px 0;
+  }
+  header .contenedor-texto {
+    border: 2px solid rgba(255, 255, 255, 0.856);
+    padding: 25px 40px;
+    width: 70%;
+    margin: 190px auto 100px auto;
+  }
+  header .contenedor-texto .texto .autor {
+    font-size: 1.5rem;
+  }
+  header .contenedor-texto .texto .profesion {
+    font-size: 1rem;
+  }
+
+  footer .contenedor .formulario input[type=text],
+footer .contenedor .formulario input[type=email] {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  footer .contenedor .formulario input[type=text],
+footer .contenedor .formulario input[type=email],
+footer .contenedor .formulario textarea {
+    padding: 10px 15px;
+    font-size: 0.875rem;
+  }
+  footer .contenedor .formulario input[type=submit] {
+    padding: 10px 15px;
+    font-size: 0.875rem;
+  }
+
+  .redes-sociales .contenedor .redes a {
+    padding: 25px;
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 346px) {
+  .trabajos .contenedor-trabajos {
+    width: 80%;
+  }
+  .trabajos .contenedor-trabajos .thumb img {
+    width: 120px;
+    border-radius: 50%;
+  }
+  .trabajos .contenedor-trabajos .description .nombre {
+    font-size: 0.875rem;
+  }
+  .trabajos .contenedor-trabajos .description .categoria {
+    font-size: 0.7rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
